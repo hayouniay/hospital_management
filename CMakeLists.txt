@@ -149,7 +149,6 @@ set(HEADERS
 qt_add_executable(HospitalMS
     ${SOURCES}
     ${HEADERS}
-    resources/resources.qrc
 )
 
 target_link_libraries(HospitalMS PRIVATE
