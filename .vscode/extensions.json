@@ -1,0 +1,30 @@
+{
+    "recommendations": [
+        // ── C++ Core ──────────────────────────────────────────────────────────
+        "ms-vscode.cpptools", // C/C++ IntelliSense, debugging, code browsing
+        "ms-vscode.cpptools-extension-pack", // Full C++ pack
+        "ms-vscode.cmake-tools", // CMake integration, configure/build/run from UI
+        "twxs.cmake", // CMakeLists.txt syntax highlighting
+        // ── Code Quality ──────────────────────────────────────────────────────
+        "llvm-vs-code-extensions.vscode-clangd", // clangd LSP (faster than cpptools)
+        "matepek.vscode-catch2-test-adapter", // Test runner integration
+        // ── Qt Specific ───────────────────────────────────────────────────────
+        "tonka3000.qtvsctools", // Qt tools: open Qt Creator, launch designer
+        "bbenoist.qt", // .pro / .qrc file support
+        // ── Productivity ──────────────────────────────────────────────────────
+        "eamodio.gitlens", // Git supercharged
+        "mhutchie.git-graph", // Visual git graph
+        "usernamehw.errorlens", // Inline error messages
+        "streetsidesoftware.code-spell-checker", // Spell check in comments/strings
+        "gruntfuggly.todo-tree", // TODO/FIXME/HACK highlighting
+        "wayou.vscode-todo-highlight", // Highlight TODOs
+        "pkief.material-icon-theme", // Better file icons
+        "zhuangtongfa.material-theme", // Dark theme
+        // ── Utilities ─────────────────────────────────────────────────────────
+        "ms-vscode.hexeditor", // Inspect SQLite binary files
+        "mechatroner.rainbow-csv", // CSV viewing for exported reports
+        "redhat.vscode-xml", // XML/QRC file editing
+        "formulahendry.code-runner" // Quick code snippet runner
+    ],
+    "unwantedRecommendations": []
+}
