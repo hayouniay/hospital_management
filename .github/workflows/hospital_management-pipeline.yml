@@ -1,0 +1,46 @@
+name: Hospital Management CI
+
+on:
+    push:
+        branches: [main, master, develop]
+    pull_request:
+        branches: [main, master, develop]
+    release:
+        types: [created]
+
+jobs:
+    build:
+        runs-on: ubuntu-24.04
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Install dependencies
+              run: |
+                  sudo apt update
+
+                  sudo apt install -y \
+                    build-essential \
+                    cmake \
+                    ninja-build \
+                    qt6-base-dev \
+                    qt6-base-dev-tools \
+                    libqt6charts6-dev \
+                    clang-format \
+                    cppcheck
+
+            - name: Check dependencies
+              run: make check-deps
+
+            - name: Configure project
+              run: make configure
+
+            - name: Build project
+              run: make build
+
+            - name: Check formatting
+              run: make format-check
+
+            - name: Run static analysis
+              run: make lint
